@@ -1,0 +1,22 @@
+.selected,
+.unselected {
+    font-size: 16px;
+    border: 0;
+    color: white;
+}
+
+button:active{
+    transform: translateY(2px);
+}
+
+.selected {
+    padding: 5px 10px;
+    border-radius: var(--borderRadius);
+    background-color: rgba(58, 58, 58, 0.329);
+    font-weight: bold;
+}
+
+.unselected {
+    background-color: unset;
+    margin: 0px 5px;
+}

@@ -1,0 +1,61 @@
+.focus {
+    min-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.focus > .progress-bar {
+    margin-top: -2px;
+    width: 0%;
+    height: 3px;
+    align-self: flex-start;
+    background-color: white;
+    border-radius: var(--borderRadius);
+}
+
+.focus > .timer {
+    width: 86%;
+    color: white;
+}
+
+.focus > .timer {
+    margin: 50px 0 30px 0;
+    padding: 20px 0px;
+    border-radius: var(--borderRadius);
+    background-color: #e0e0e01c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus > .timer > h1 {
+    margin: 10px 0;
+    font-size: 120px;
+}
+
+.focus > .timer > .toggle {
+    min-width: 188px;
+    padding: 15px 0;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+    border: 0;
+    border-radius: var(--borderRadius);
+    box-shadow: 0 5px rgba(255, 255, 255, 0.753);
+    transition: color 2s;
+}
+
+.focus > .timer > .ticking,
+.focus > .timer > .toggle:active {
+    transform: translateY(5px);
+    box-shadow: 0 0px;
+}
+
+.focus > p {
+    font-size: 18px;
+    color: white;
+}
